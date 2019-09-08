@@ -1,0 +1,10 @@
+To Build the Docker image:
+
+docker build -t IMAGE_NAME:TAG_NAME .
+
+docker build -t node-hello-world-app:v1 .
+
+
+To run the image:
+docker run -p HOST_PORT:CONTAINER_PORT -d IMAGE_NAME:TAG_NAME
+docker run -p 8080:8080 -d node-hello-world-app:v1
